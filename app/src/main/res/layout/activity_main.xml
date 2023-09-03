@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    >
+
+
+    <ImageView
+        android:layout_width="554dp"
+        android:layout_height="443dp"
+        android:src="@drawable/simbolo" />
+
+    <EditText
+        android:id="@+id/nome_med"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="-50dp"
+        android:hint="Digite o nome do medicamento"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        android:outlineAmbientShadowColor="@color/white"
+        android:maxLines="1"
+        android:imeOptions="actionDone"
+        />
+
+    <Button
+        android:id="@+id/procurar_med"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="PROCURAR"
+        android:textColor="@color/blue_sky"
+        android:backgroundTint="@color/yellow_soft"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:id="@+id/texto1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="120sp"
+        android:textStyle="bold"/>
+
+
+
+
+
+    <TextView
+        android:id="@+id/resultado_med"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="60dp"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-thin"
+        android:textStyle="bold"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+
+</LinearLayout>
+</ScrollView>
